@@ -5,7 +5,7 @@ pipeline {
     environment{
         dockerImage = ''
         registry = 'vivek13s/java_app'
-        registryCredential = 'docker_hub'
+        CredentialId = 'docker_hub'
     }
     
     stages{
@@ -25,7 +25,7 @@ pipeline {
         stage('uploading Image'){
             steps{
                 script{
-                    docker.withRegistry('https://hub.docker.com/',registryCredential){
+                    docker.withRegistry(credentialsId: 'docker_hub', url: 'https://hub.docker.com/'){
                         dockerImage.push()
                     }
                 }
