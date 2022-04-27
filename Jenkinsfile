@@ -4,7 +4,7 @@ pipeline {
     
     environment{
         dockerImage = ''
-        registry = 'vivek13s/javaapp'
+        registry = 'vivek13s/java_app'
         registryCredential = 'docker_hub'
     }
     
