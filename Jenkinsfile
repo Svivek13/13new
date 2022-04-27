@@ -5,7 +5,7 @@ pipeline {
     environment{
         dockerImage = ''
         registry = 'vivek13s/java_app'
-        CredentialId = 'docker_hub'
+        credentialsId = 'docker_hub'
     }
     
     stages{
