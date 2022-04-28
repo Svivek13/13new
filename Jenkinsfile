@@ -6,7 +6,7 @@ mkdir -p /mlops-app/downloads
 
 cd /mlops-app
 
-sudo apt install -y default-jre
+sudo apt install -y jre
 echo "node version..............."
 java -version
 echo "installing angular/cli ............."
