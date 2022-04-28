@@ -6,18 +6,18 @@ mkdir -p /mlops-app/downloads
 
 cd /mlops-app
 
-sudo apt install nodejs
+sudo apt install default-jre
 echo "node version..............."
-node -v
+java -version
 echo "installing angular/cli ............."
-npm install @angular/cli 
-ng --version
+sudo apt install default-jdk
+javac -version
 
 
-echo "executing npm install ..................."
-npm install
-echo "executing ng build ...................."
-ng build --prod
+#echo "executing npm install ..................."
+#npm install
+#echo "executing ng build ...................."
+#ng build --prod
 
 
 cd ..
