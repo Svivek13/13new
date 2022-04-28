@@ -26,14 +26,8 @@ stage('Build Dockerimage'){
             steps {
                 script{
                      echo "ziping the files"
-                     zip -r autoamtion-master.zip autoamtion-master
-                     #tar cvzf autoamtion-master-$BUILD_NUMBER.tar.gz /autoamtion-master
-
-
-                     ssh-copy-id-i .ssh/$Home.id_rsa.pub azureuser@10.10.164.4
-                     ssh azureuser@10.10.164.4
-                     ssh demovm@10.0.8.4
-                     ssh -i ~/.ssh/your-key azureuser@10.10.164.4
+                     #zip -r autoamtion-master.zip autoamtion-master
+                     tar cvzf autoamtion-master-$BUILD_NUMBER.tar.gz /autoamtion-master
 		}
        }
 }		
