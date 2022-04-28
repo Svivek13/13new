@@ -10,7 +10,8 @@ sudo apt install nodejs
 echo "node version..............."
 node -v
 echo "installing angular/cli ............."
-npm install -g @angular/cli > /dev/null
+npm install -g @angular/cli
+ng --version
 
 
 echo "executing npm install ..................."
