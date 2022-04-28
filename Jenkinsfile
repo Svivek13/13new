@@ -20,7 +20,7 @@ javac -version
 cd ..
 
 
-echo "ziping the files"
+echo "zipping the files"
 zip -r autoamtion-master.zip autoamtion-master
 #tar cvzf autoamtion-master-$BUILD_NUMBER.tar.gz /autoamtion-master
 
