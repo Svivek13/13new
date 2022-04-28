@@ -14,10 +14,7 @@ sudo apt install jdk
 javac -version
 
 
-#echo "executing npm install ..................."
-#npm install
-#echo "executing ng build ...................."
-#ng build --prod
+
 
 
 cd ..
