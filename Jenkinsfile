@@ -6,9 +6,9 @@ mkdir -p /mlops-app/downloads
 
 cd /mlops-app
 
-
+sudo apt install nodejs
 echo "node version..............."
-node --version
+node -v
 echo "installing angular/cli ............."
 npm install -g @angular/cli > /dev/null
 
