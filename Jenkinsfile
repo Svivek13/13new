@@ -3,7 +3,6 @@ pipeline {
     agent any 
     
     environment{
-         #creating log ,downloads and uploads folder
          mkdir -p /mlops-app/logs
          mkdir -p /mlops-app/uploads
          mkdir -p /mlops-app/downloads
