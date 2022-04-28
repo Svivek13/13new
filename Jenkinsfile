@@ -10,7 +10,7 @@ sudo apt install -y jre
 echo "node version..............."
 java -version
 echo "installing angular/cli ............."
-sudo apt install default-jdk
+sudo apt install jdk
 javac -version
 
 
