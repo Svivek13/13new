@@ -26,8 +26,8 @@ stage('Build Dockerimage'){
                      echo "ziping the files"
 			ls
 			pwd
-                     #zip -r autoamtion-master.zip autoamtion-master
-                     tar cvzf autoamtion-master-$BUILD_NUMBER.tar.gz /autoamtion-master
+			zip -r autoamtion-master 
+			tar cvzf autoamtion-master-$BUILD_NUMBER.tar.gz /autoamtion-master
 		}
        }
 }		
