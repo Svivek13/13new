@@ -4,8 +4,6 @@ pipeline {
     
     environment{
          mkdir -p /mlops-app/logs
-         mkdir -p /mlops-app/uploads
-         mkdir -p /mlops-app/downloads
      }
 
 cd /mlops-app
