@@ -1,10 +1,10 @@
 pipeline {
-    
-    agent any 
-    
-    environment{
-	    mkdir -p /mlops-app/logs
-	    }
+	
+	agent any
+	
+	environment{
+		mkdir -p /mlops-app/logs
+		}
 
 cd /mlops-app
 sudo apt install jre
