@@ -20,7 +20,7 @@ cd /mlops-app
 
 cd ..
 
-stage('Build Dockerimage'){
+stage('Zip'){
             steps {
                 script{
                      echo "ziping the files"
@@ -29,26 +29,6 @@ stage('Build Dockerimage'){
 			zip -r autoamtion-master 
 			tar cvzf autoamtion-master-$BUILD_NUMBER.tar.gz /autoamtion-master
 		}
+	    }
        }
 }		
-stage('uploading Image'){
-            steps{
-                script{
-                     scp -r azureuser@<10.10.164.4>:/home/var/lib/jenkins/workspace/autoamtion-master.zip demovm@10.0.8.4/tmp
-			ssh demovm@10.0.8.4
-                        cd /tmp
-                        ssh azureuser@<10.10.164.4> "build=${BUILD_NUMBER}" bash -s <<'ENDSSH'
-                        echo "............Deploying ${build}..........................."
-                        cd /home/azueruser
-                        pwd
-                        rm -rf autoamtion-master
-                        echo ".....................Listing Current files and dir......................"
-                        ls -lart
-                        mkdir autoamtion-master
-                        echo ".......................Listing Current files and dir............................"
-                        ls -lart
-                        tar -xvf "/home/mlopsuser/autoamtion-master-${build}.tar.gz" -C "/home/azueruser/autoamtion-master"
-                    }
-		}
-	}
-}	
