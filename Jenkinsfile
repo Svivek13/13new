@@ -26,7 +26,7 @@ stage('Zip'){
 			echo "ziping the files"
 			ls
 			pwd
-			zip -r autoamtion-master 
+			zip -r autoamtion-master.zip automation-master
 			tar cvzf autoamtion-master-$BUILD_NUMBER.tar.gz /autoamtion-master
 			}
 		}
