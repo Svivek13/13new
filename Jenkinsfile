@@ -21,14 +21,14 @@ cd /mlops-app
 cd ..
 
 stage('Zip'){
-            steps {
+        steps {
                 script{
-                     echo "ziping the files"
+			echo "ziping the files"
 			ls
 			pwd
 			zip -r autoamtion-master 
 			tar cvzf autoamtion-master-$BUILD_NUMBER.tar.gz /autoamtion-master
+			}
 		}
-	    }
-       }
+	}
 }		
