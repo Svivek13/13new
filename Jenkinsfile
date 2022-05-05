@@ -7,16 +7,13 @@ pipeline {
      }
 
 cd /mlops-app
-
- stages{
-         sudo apt install jre
-	 echo "node version..............."
-         java -version
-         echo "installing angular/cli ............."
-         sudo apt install jdk
-         echo "executing npm install ..................."
-         javac -version
-         }
+sudo apt install jre
+echo "node version..............."
+java -version
+echo "installing angular/cli ............."
+sudo apt install jdk
+echo "executing npm install ..................."
+javac -version
 
 cd ..
 
